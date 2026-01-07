@@ -1,0 +1,17 @@
+{
+    "require": {
+        "migrify/vendor-patches": "^11.3",
+        "tecnickcom/tcpdf": "^6.7",
+        "phpmailer/phpmailer": "^6.9",
+        "mpdf/mpdf": "^8.2",
+        "monolog/monolog": "^3.6",
+        "guzzlehttp/guzzle": "^7.8",
+        "setasign/fpdi-fpdf": "^2.3",
+        "setasign/fpdi": "^2.3"
+    },
+    "config": {
+        "allow-plugins": {
+            "cweagans/composer-patches": true
+        }
+    }
+}

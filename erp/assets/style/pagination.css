@@ -1,0 +1,27 @@
+.pagination-container {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+
+  .pagination li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  .pagination .active a {
+    font-weight: bold;
+    background-color: #273B4A; /* Changer la couleur ici */
+    color: white;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .pagination .page-link {
+    color: #273B4A; /* Changer la couleur ici */
+  }
+
+  .pagination .page-item.disabled .page-link {
+    color: #aaa;
+  }

@@ -1,0 +1,85 @@
+.action-buttons button:nth-of-type(1) {
+  margin-right: 10px;
+}
+  
+  h2 {
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #centreName {
+    text-align: left;
+  }
+  
+  /* Search and Button styles */
+  .d-flex {
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5a6268;
+    cursor: pointer;
+  }
+  
+  /* Table styles */
+  .table-striped {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table-striped th,
+  .table-striped td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .table-striped th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .table-striped tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  select, option {
+   cursor: pointer; 
+  }
+  
+
+/* style de la modal ajouter un étudiant  */
+
+.modal-title {
+  text-align: center;
+  width: 100%;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+  

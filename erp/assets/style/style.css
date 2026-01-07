@@ -1,0 +1,107 @@
+:root{
+    --main-color:#263B4A;
+    --2main-color:#ffffff;
+    --3main-color:#F93100;
+    --4main-color:#7C838A;
+  }
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.wrapper {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table h3 {
+    margin-bottom: 10px;
+}
+
+.table th {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+.table td, .table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #ddd;
+}
+
+.clickable{
+    cursor: pointer;
+}
+
+
+/* Container for all cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; /* Space between the cards */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color for the container */
+}
+
+/* Individual card styling */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px; /* Width of each card */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Smooth animation on hover */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333; /* Dark text color */
+}
+
+.card p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #666; /* Lighter text color */
+}
+
+/* Styling for the button */
+.card a button {
+    background-color: var(--3main-color); /* Primary button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.card a button:hover {
+    background-color: black; /* Darker shade on hover */
+}

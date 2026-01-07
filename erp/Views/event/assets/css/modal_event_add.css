@@ -1,0 +1,89 @@
+.jours-selector-container {
+    display: flex;
+    gap: 10px;
+}
+
+.jour-button,
+.edit-jour-button,
+.add-event-jour-button {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    font-size: 14px;
+    font-weight: bold;
+    user-select: none;
+}
+
+.jour-button.active,
+.edit-jour-button.active,
+.add-event-jour-button.active {
+    background-color: #f93100;
+    color: white;
+    border-color: #f93100;
+}
+
+.hidden-input,
+.edit-hidden-input,
+.add-event-hidden-input {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.form-switch .form-check-input:checked {
+    background-color: #f91000;
+    border-color: #f91000;
+}
+
+.form-switch .form-check-input:checked:focus {
+    box-shadow: 0 0 0 0.25rem rgba(249, 16, 0, 0.25);
+}
+
+.form-switch .form-check-input {
+    cursor: pointer;
+}
+
+.form-switch .form-check-label {
+    cursor: pointer;
+}
+
+#no-recurrent-period-selector {
+    padding: 0;
+}
+
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.row.no-gutters>.col {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.col-md-6 {
+    padding: 0 10px;
+    /* Adjust the horizontal padding as needed */
+}
+
+.pl {
+    padding-left: 10px;
+}
+
+.grayed-out-select {
+    background-color: #e9ecef;
+    color: #6c757d;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+.error-message{
+    color: red;
+  }

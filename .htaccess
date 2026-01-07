@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^cerfa\.heriolvaldo\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.cerfa\.heriolvaldo\.com$
+RewriteRule ^/?$ "https\:\/\/cerfa\.heriolvaldo\.com\/site" [R=301,L]
+

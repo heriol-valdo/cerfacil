@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+:root{
+    --main-color:#263B4A;
+    --2main-color:#ffffff;
+    --3main-color:#F93100;
+    --4main-color:#7C838A;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile .user{
+color: #000000;
+font-size: 50px;
+}
+.profile .title{
+  margin-bottom: 10px;
+font-size: 25px;
+font-weight: 500;
+position: relative;
+}
+.profile .title::before{
+content: "";
+position: absolute;
+left: 0;
+bottom: 0;
+height: 3px;
+width: 30px;
+border-radius: 5px;
+background: linear-gradient(135deg, var(--main-color), var(--2main-color));;
+}
+
+.profile .error-mgs{
+  color: red;
+}
+
+.profile .valid-mgs{
+  color:green;
+  font-size: 25px;
+}
+.container{
+    /*margin: 20px 0 50px 25%;*/
+  /*max-width: 700px;*/
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.20);
+}
+
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+.container .input-role{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.container .input-role input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid var(--main-color);
+  border-bottom-width: 2px;
+  background-color: #263b4a4f;
+  transition: all 0.3s ease;
+  text-align: center;
+  font-weight: 600;
+  font-size: large;
+}
+.container .input-role span{
+    display: block;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+.container .input-centre{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .container .input-centre input{
+    height: 35px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+  .container .input-centre span{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 35px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: var(--3main-color);
+}
+.button-centre{
+   justify-content: center;
+   align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+  .custom-button {
+    background-color: #a0a5aa; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    text-decoration: none;
+}
+
+/* Style pour les boutons lorsqu'ils sont survolés */
+.custom-button:hover {
+    background-color: var(--3main-color); /* Changement de couleur de fond plus foncée lors du survol */
+}
+
+/* Style pour les boutons lorsqu'ils sont cliqués */
+.custom-button:active {
+    background-color: var(--main-color); /* Changement de couleur de fond plus foncée lors du clic */
+}
+
+/* Style pour les messages d'erreur */
+.erreur{
+  color: red
+}
+
+
+
+ @media(max-width: 584px){
+ .container{
+    margin-left: 10%;
+  max-width: 100%;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .category{
+    width: 100%;
+  }
+  .content form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+  }
+  @media(max-width: 459px){
+  .container .content .category{
+    flex-direction: column;
+  }
+}
+
+
+.toast-with-progress {
+  height: 60px;
+}
+
+.progress-bar {
+  position: absolute;
+  bottom: 0; 
+  left: 0;
+  height: 4px; 
+  background-color: white; 
+  animation: progress 3s linear forwards; 
+}
+
+@keyframes progress {
+  from {
+    width: 100%; 
+  }
+  to {
+    width: 0%; 
+  }
+}

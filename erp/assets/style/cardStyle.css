@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+    --main-color:#263B4A;
+    --2main-color:#ffffff;
+    --3main-color:#F93100;
+    --4main-color:#7C838A;
+}
+
+.cards-container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cards-container-column{
+    margin-bottom: 15px;
+    margin-left: 15px;
+    display: flex;
+    max-width: 300px;
+    flex: 0 0 auto;
+    flex-direction: column;
+    order: 2;
+}
+
+.cards-container-column-alt{
+    margin-bottom: 15px;
+    margin-left: 15px;
+    display: flex;
+    max-width: 300px;
+    flex: 0 0 auto; 
+    flex-direction: column;
+    order: 2;
+}
+
+@media (max-width: 1628px) {
+    .cards-container-column {
+        /*display: none; */
+        flex-direction: row; 
+        max-width:1100px; 
+        margin-left: 0; 
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+        order: 1;
+    }
+
+    .container-card-column {
+        flex: 1 1 auto; 
+        max-width: 100%; 
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .cards-container-column-alt {
+        /*display: none; */
+        flex-direction: row;
+        max-width: 1100px;
+        margin-left: 0; 
+        margin-bottom: 15px; 
+        flex-wrap: wrap;
+        order: 1;
+    }
+
+    .container-card-column {
+        flex: 1 1 auto; 
+        max-width: 100%; 
+        margin-right: 10px; 
+    }
+}
+
+.container-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    width: 250px;
+    height: 150px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.5); 
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.5);
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+
+.container-card-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    width: 250px;
+    height: 150px;
+    background-color: #f4f4f4;
+    margin-bottom: 15px;
+    padding: 10px;
+
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.5); 
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.5);
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+
+.container-big-card-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    width: 250px;
+    background-color: #f4f4f4;
+    margin-bottom: 15px;
+    padding: 10px;
+
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.5); 
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.5);
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+
+.container-big-card-column p{
+   font-size: 12px;
+   margin-bottom: 5px;
+}
+
+.container-card-column .card-button,
+.container-big-card-column .card-button{
+    
+    background-color: white;
+    border: 2px solid #333; /* Dark grey outline */
+    color: #333; /* Dark grey text */
+    border-radius: 15px; /* Rounded borders */
+    padding: 5px 5px; /* Adjust padding as needed */
+    cursor: pointer; /* Show cursor pointer on hover */
+    font-size: 12px; /* Adjust font size as needed */
+    
+}
+
+.container-card h3 {
+    font-size: 0.9em;
+    border-bottom: 2px solid #F93100;
+    padding-bottom: 10px; /* Adjust as needed */
+}
+
+.container-card-column h3,
+.container-big-card-column h3 {
+    font-size: 0.9em;
+    border-bottom: 2px solid #F93100;
+    padding-bottom: 10px; /* Adjust as needed */
+}
+
+.card-button {
+    background-color: white;
+    border: 2px solid #333; /* Dark grey outline */
+    color: #333; /* Dark grey text */
+    border-radius: 10px; /* Rounded borders */
+    padding: 6px 6px; /* Adjust padding as needed */
+    cursor: pointer; /* Show cursor pointer on hover */
+    font-size: 12px; /* Adjust font size as needed */
+    text-decoration: none;
+}
+
+/* Style the button on hover */
+.card-button:hover {
+    background-color: #333;
+    color: white;
+}
+
+.svgIcon{
+    width:25%;
+    max-width:150px;
+    max-height:25%;
+    opacity: 0.3;
+}
+
+.card-main-text{
+    font-size: 2em;
+    font-weight:500;
+    color:#333;
+    margin-bottom:0;
+}
+
+.card-sub-text{
+    font-size: 0.8em;
+    color:#333;
+    margin-bottom: 0;
+}

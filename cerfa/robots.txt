@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /
+Allow: /Views/
+Allow: /Views/*
+Allow: /Views/*/*
+
+Sitemap: https://cerfa.heriolvaldo.com/cerfa/sitemap.xml
+

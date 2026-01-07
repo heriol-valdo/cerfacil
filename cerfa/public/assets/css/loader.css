@@ -1,0 +1,445 @@
+.page-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #E9E9E9;
+    padding: 10px 0;
+    text-align: center;
+    height: 40px;
+
+ 
+}
+
+.static-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* S'assure que l'élément reste au-dessus de tout autre contenu */
+    pointer-events: none; /* Désactive toutes les interactions avec l'élément */
+}
+
+
+
+.fixe {
+    position: fixed; /* Le contenu reste fixe */
+   
+}
+
+.proposition-item {
+    margin-top: 10px; /* Ajoutez la marge supérieure souhaitée en pixels */
+}
+
+
+ /* style de la vue dossier*/
+
+
+
+
+  header {
+    
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background-color: #153C4A;
+          padding: 60px;
+        
+        
+          width: 100%;
+          
+        
+        
+      }
+      
+      .badge {
+          background-color: #d1b2ff;
+          color: #fff;
+          padding: 5px 10px;
+          border-radius: 5px;
+          font-size: 0.9em;
+      }
+      
+      
+      nav ul {
+          list-style: none;
+          display: flex;
+          justify-content: space-between;
+          padding: 0;
+          margin-bottom: 20px;
+          width: 100%;
+      }
+      
+      nav li {
+          margin-right: 15px;
+          font-weight: bold;
+          cursor: pointer;
+          padding: 10px;
+          border-radius: 5px;
+          transition: background-color 0.3s;
+      }
+      
+      
+      nav .active {
+          background-color: #2196f3;
+          color: #fff;
+      }
+      
+      
+      .section {
+          display: block;
+          flex-direction: row;
+          gap: 20px; 
+          width: 100%;
+        
+         
+      }
+      
+      .progress {
+          background-color: #153C4A;
+          display: flex;
+          justify-content: space-between;
+          height: 80px;
+          gap: 20px;
+          border-bottom-right-radius: 15px 15px;
+          border-bottom-left-radius: 15px 15px;
+         
+          padding: 10px;
+          overflow-x: auto;
+          white-space: nowrap;
+          scrollbar-width: none; /* For Firefox */
+        
+      }
+      
+      
+      .progress::-webkit-scrollbar {
+          display: none; /* For Chrome, Safari, and Opera */
+      }
+      
+      .cardDossier {
+          flex: 1;
+          background-color: #f9f9f9;
+          padding: 5px;
+          border-radius: 8px;
+          width: calc(50% - 10px); /* Pour 2 colonnes par ligne, avec un espace de 20px entre */
+      }
+      
+
+       .cardDossier.recap {
+          background-color: #ff5675;
+      }
+      .cardDossier.school {
+          width: 50%;
+          background-color: #ffdd57;
+      }
+      
+      .cardDossier.student {
+          background-color: #a29bfe;
+      }
+      
+      .cardDossier.company {
+          background-color: #ff7675;
+      }
+     
+      .cardDossier.contrat {
+          background-color: #ff9675;
+      }
+
+      .cardDossier.comptabilite {
+        background-color: #cc75ff;
+    }
+      
+      .icon {
+          padding-top: 6px;
+          font-size: 2.5em;
+      }
+      
+      
+      .progress-fill {
+          background-color: #2196f3;
+          height: 10px;
+          border-radius: 5px;
+      }
+      
+      .document-status {
+          flex: 1;
+      }
+      
+      .status-card {
+          width: 100%;
+          background-color: #f7f9fc;
+          padding: 15px;
+          border-radius: 8px;
+          margin-bottom: 20px;
+      }
+      
+      .secondarys-button,
+      .primary-button,
+      .secondary-button,
+      .danger-button,
+      .upload-button {
+          margin: 10px 0;
+          padding: 10px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          width: 100%;
+          transition: background-color 0.3s;
+      }
+      
+      .primary-button {
+          background-color: #007bff;
+          color: white;
+      }
+
+
+      
+      .secondary-button {
+          background-color: #ccc;
+          color: black;
+      }
+
+      .secondarys-button {
+        background-color: #fffffffa;
+        color: black;
+    }
+      
+      .danger-button {
+          background-color: #ff4d4d;
+          color: white;
+      }
+      
+      .upload-button {
+          background-color: #4caf50;
+          color: white;
+          margin-bottom: 15px;
+      }
+      
+      aside.documents {
+          flex-basis: 15%;
+          background-color: #f7f9fc;
+          padding: 15px;
+          border-radius: 8px;
+      }
+      
+      .documents ul {
+          list-style: none;
+          padding: 0;
+      }
+      
+      .documents li {
+          background-color: #fff;
+          margin: 5px 0;
+          padding: 10px;
+          border-radius: 5px;
+          border: 1px solid #ddd;
+      }
+      
+      .divcol {
+          display: flex;
+          flex-direction: row;
+          gap: 1.5rem;
+          width: 100%;
+      }
+      
+      .divcolmain{
+          display: flex;
+          flex-direction: row;
+          gap: 3rem;
+          width: 100%;
+          margin-right: 15px;
+          padding-right: 15px;
+          padding-left: 15px;
+      }
+
+.divcolel{
+          display: flex;
+          flex-direction: row;
+          gap: 3rem;
+          width: 100%;
+          margin-right: 5px;
+          padding-right: 5px;
+          padding-left: 5px;
+      }
+      
+      .h2 {
+          color: white;
+          padding-left: 10px;
+          font-size: 20px;
+      }
+      .task{
+          color: white;
+          margin-top: 10px;
+      }
+
+.input{
+border-radius: 5px;
+border: 2px solid #ccc;
+height: 34px;
+}
+      
+     
+
+
+.clickable {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.clickable:hover {
+    background-color: #f0f0f0; /* Change la couleur au survol */
+}
+
+      
+      
+    @media (max-width: 768px)  {
+        nav ul {
+            flex-direction: column;
+            align-items: center;
+        }
+
+aside{
+display: none;
+}
+          .status-card {
+           width: 70%;
+          }
+
+         .documents ul{
+            flex-direction: column;
+            align-items: center;
+
+        }
+        .divcolel {
+            flex-direction: column;
+        }
+
+        
+            
+              .cardDossier {
+            width: 100%; /* Pour occuper toute la largeur sur mobile */
+        }
+    
+        .task{
+        color: white;
+        margin-top: 10px;
+    }
+    } 
+
+
+
+
+
+
+
+.notifications-container {
+  width: 320px;
+  height: auto;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.error-alert {
+  border-radius: 0.375rem;
+  padding: 1rem;
+  background-color: rgb(254 242 242);
+}
+
+.error-svg {
+  color: #F87171;
+  width: 20px;
+  height: 20px;
+}
+
+.error-prompt-heading {
+  color: #991B1B;
+  font-size: 18px;
+  line-height: 1.25rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.error-prompt-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.25rem;
+}
+
+.error-prompt-wrap {
+  margin-top: 0.5rem;
+  color: #B91C1C;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.error-prompt-list {
+  padding-left: 1.25rem;
+  margin-top: 0.25rem;
+  list-style-type: disc;
+}
+
+
+
+
+.profil-footer{
+background: #153C4A; color:white; height: 35px; width: 180px; border: 3px solid #fff; border-radius: 7px;
+}
+
+
+.profil-footer:hover {
+    background: #F93100;
+}
+
+.button-link {
+    text-decoration: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px; /* Espace entre les boutons */
+    margin-left: 29%;
+    margin-bottom: 25px;
+}
+
+.valid-alert {
+  border-radius: 0.375rem;
+  padding: 1rem;
+  background-color: rgb(204 255 229);
+}
+.valid-prompt-heading {
+  color: #228B22;
+  font-size: 18px;
+  line-height: 1.25rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.valid-svg {
+  color: #4CAF50;
+  width: 20px;
+  height: 20px;
+}
+
+ @media screen and (max-width: 715px) {
+   /* Vos styles pour les écrans plus larges que l'iPhone XR vont ici */
+           .button-container{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+             margin-left: 0%;
+           }
+        }
+

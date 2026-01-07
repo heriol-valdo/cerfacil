@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Redirection de sitemap.xml vers sitemap.php
+RewriteRule ^sitemap.xml$ sitemap.php [L]
+
+# Gestion des URLs dynamiques
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]

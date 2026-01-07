@@ -1,0 +1,129 @@
+
+:root{
+    --main-color:#263B4A;
+    --2main-color:#ffffff;
+    --3main-color:#F93100;
+    --4main-color:#7C838A;
+  }
+
+.container-flex-table{
+    display: flex; 
+    max-height: 500px;
+}
+
+.table-button {
+    background-color: white;
+    border: 2px solid #333; /* Dark grey outline */
+    color: #333; /* Dark grey text */
+    border-radius: 10px; /* Rounded borders */
+    padding: 4px 4px; /* Adjust padding as needed */
+    cursor: pointer; /* Show cursor pointer on hover */
+    font-size: 0.8em; /* Adjust font size as needed */
+}
+
+.table-button:hover {
+    background-color: #333;
+    color: white;
+}
+
+
+.div-wrapper{
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-right: 20px;
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.5); 
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.5);
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    position: relative; 
+}
+
+.table-duo-table{
+    height: auto;
+    border-collapse: collapse;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    
+}
+
+.table-duo-table caption {
+    caption-side: top;
+    position: sticky;
+    top: 0;
+    background: #f4f4f4;
+    ; /* Optional: Background to cover underlying content when sticky */
+    z-index: 2; /* Ensure caption is above other table content */
+    
+}
+
+.table-duo-table thead th {
+    position: sticky;
+    top: 1.5em; /* Adjust this value to the height of the caption */
+    z-index: 1; /* Ensure header cells are above other table content */
+}
+
+.table-content-container {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#button-ticket {
+    background-color: var(--3main-color);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+#button-ticket:hover {
+    background-color: #ffffff;
+    color: black;
+    border: black solid 1px;
+}
+
+caption {
+    font-weight: bold;
+    padding-bottom: 5px;
+    font-size:0.9em;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+td{
+    font-size:0.8em;
+}
+
+th {
+    background-color: #f93100;
+    color: white;
+}
+
+
+
+tbody .table-row:nth-child(2n+1) {
+    background-color: #ffffff;
+}
+
+tbody .table-row:nth-child(2n) {
+    background-color: #f4f4f4;
+}
+
+
+tbody .table-row-admin:nth-child(2n+1) {
+    background-color: #ffffff;
+}
+
+tbody .table-row-admin:nth-child(2n) {
+    background-color: #f9320044;
+}
+
+.centre-clickable{
+    cursor: pointer;
+}

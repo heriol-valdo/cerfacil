@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+  --main-color: #263B4A;
+  --2main-color: #ffffff;
+  --3main-color: #F93100;
+  --4main-color: #7C838A;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.center-details h1,
+.center-details h2 {
+  margin: 0;
+}
+
+.centre-details-section {
+  background-color: #e8e8e8;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.centre-details-section p {
+  margin: 5px 0;
+}
+
+.formation-name {
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+#toStudentList {
+  background-color: color;
+  padding: 0 10px 0 10px;
+}
+
+#centre-details-additionnal-access {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+

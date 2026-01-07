@@ -1,0 +1,184 @@
+main{
+
+	background-color:#153C4A;
+	padding: 20px;
+	margin-top: 2%;
+	margin-left: 200px;
+	margin-right: 200px;
+	
+}
+
+.imagestruct{
+	margin-top: 1%;
+	margin-left:45% ;
+	height: 120px;
+	
+}
+.imagestructs{
+	margin-top: 1%;
+	margin-left:45%;
+	height: 60px;
+	
+}
+b{
+color: red;	
+}
+
+body{
+	background-color:#153C4A;
+}
+
+
+#toast-container > .customer-success {   
+	margin:auto;         
+background-color: green;
+}
+
+#toast-container > .customer-error {  
+	
+	margin:auto;         
+background-color: red;
+}
+
+#toast-container > .customer-authentification {    
+	margin:auto;
+background-color: blue;
+}
+
+.sendBtn {
+    background: #FA4519;
+    margin-top: 25px;
+    margin-left: 47%;
+}
+
+
+@media (max-width: 1344px)  {
+   
+    .row {
+        display: block; 
+    }
+
+ .col-md-3 {
+        width: 100%; 
+        margin-bottom: 10px;
+    }
+
+ .col-md-2 {
+        width: 100%; 
+        margin-bottom: 10px;
+    }
+
+ .col-md-4 {
+        width: 100%; 
+        margin-bottom: 10px;
+    }
+
+ .col-md-5 {
+        width: 100%; 
+        margin-bottom: 10px;
+    }
+
+ .col-md-6 {
+        width: 100%; 
+        margin-bottom: 10px;
+    }
+  
+}
+
+@media (max-width: 984px)  {
+   
+      .imagestruct{
+		margin-top: 0px;
+		margin-left: 25%;
+		height: 150px;
+		width: 200px;
+	}
+
+.imagestructs{
+	margin-top: 0px;
+	margin-left:40% ;
+	height: 60px;
+}
+
+
+  
+}
+
+
+
+
+@media screen and (max-width:742px){
+
+	.imagestruct{
+		margin-top: 0px;
+		margin-left: 25%;
+		height: 150px;
+		width: 200px;
+	}
+	
+.imagestructs{
+	margin-top: 0px;
+	margin-left:40% ;
+	height: 60px;
+}
+
+	main{
+	width: 100%;
+        margin-top: 0px;
+	background-color:#153C4A;
+	margin-left: 1px;
+	margin-right: 10px;
+	
+  }
+
+body{
+	background-color:#153C4A;
+}
+
+
+
+
+
+.form-group {
+    margin-bottom: 15px;
+	width: 100%;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.col-md-3 {
+    width: 100%; /* 3 colonnes sur 12 (25%) */
+    float: left;
+}
+
+.col-md-4 {
+    width: 100%;/* 4 colonnes sur 12 (33.33%) */
+    float: left;
+}
+
+.col-md-6 {
+	width: 100%;/* 6 colonnes sur 12 (50%) */
+    float: left;
+}
+
+
+
+/* Styles pour l'étiquette principale en haut */
+
+
+
+.sendBtn {
+    background: #FA4519;
+    margin-top: 25px;
+    margin-left: 35%;
+}
+
+
+
+
+}

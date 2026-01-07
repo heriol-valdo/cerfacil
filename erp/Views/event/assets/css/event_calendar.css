@@ -1,0 +1,212 @@
+
+  #calendar {
+    max-width: 1100px;
+    /*margin: 0 auto;*/
+    max-height: 480px;
+  }
+
+  .modal {
+    display: none;
+    position: absolute;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .modal-body p {
+    margin: 5px 0; /* Adjust the value as needed */
+}
+
+  .modal.is-visible {
+    display: block;
+  }
+
+  .modal-overlay {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: hsla(0, 0%, 0%, 0.5);
+  }
+
+  .modal-wrapper {
+    position: absolute;
+    z-index: 9999;
+    top: 6em;
+    left: 50%;
+    width: 800px;
+    margin-left: -16em;
+    background-color: #fff;
+    box-shadow: 0 0 1.5em hsla(0, 0%, 0%, 0.35);
+  }
+
+  .modal-content {
+    padding: 1em;
+  }
+
+  .sessions-selector-list {
+    max-height: 150px; /* Adjust the height as needed */
+    overflow-y: auto;
+    border: 1px solid #ccc; /* Optional: add a border for better visualization */
+    padding: 10px; /* Optional: add padding for better appearance */
+}
+
+#event_description {
+  resize: none;
+  height: 6em;
+}
+
+.hidden {
+  display: none;
+}
+
+.jours-selector-container {
+  display: flex;
+  gap: 10px; /* Space between day selectors */
+}
+
+.jours-selector-container label {
+  margin-left: 5px; /* Space between checkbox and label */
+  cursor: pointer; /* Pointer cursor for labels */
+}
+
+.jours-selector-container input[type="checkbox"] {
+  margin-right: 5px; /* Space between checkbox and label */
+}
+
+.btn-danger-dark{
+  background-color:#990000;
+  color: white;
+}
+
+.btn-danger-mid{
+  background-color:#CC0000;
+  color:white;
+}
+
+.btn-danger-light{
+  background-color:#fd2c2c;
+  color:white;
+}
+
+.btn-danger-mid:hover, .btn-danger-light:hover, .btn-danger-dark:hover {
+  background-color:#484848;
+  color:white;
+}
+
+.fc-scrollgrid-sync-inner{
+   color:black !important;
+}
+
+.fc-col-header-cell-cushion {
+    color: white !important;
+    text-decoration: none; 
+    text-transform: capitalize;
+}
+
+
+.fc-toolbar-title {
+  text-transform: capitalize;
+}
+
+/* Couleur des boutons */
+.fc .fc-button {
+  background-color: #757575; 
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.fc .fc-button:hover {
+  background-color: #f91000; 
+  color: white; 
+}
+
+.fc .fc-button .fc-button-active {
+  background-color: #f91000; 
+  color: white; 
+  border: none; 
+}
+
+/* Couleur des events */
+.fc-event{
+  background-color: #4d4d4d !important;
+  border-color: #4d4d4d !important;
+  transition: background-color 0.3s ease;
+}
+
+.fc-event:hover {
+  background-color: #f91000 !important;
+  border-color: #f91000 !important;
+}
+
+/* Point bleu sur event */
+.fc-daygrid-event-dot{
+  display:none;
+}
+
+/* Numéros jours - Calendrier Mois */
+.fc-daygrid-day-number{
+  font-weight:bold;
+}
+
+.fc-daygrid-day-number{
+  font-weight:bold;
+  text-decoration: none;
+}
+
+.fc-daygrid-day-number,
+.fc-daygrid-day-top a {
+    color: #727272 !important; 
+    text-decoration: none !important; 
+}
+
+.fc-daygrid-day-number:hover,
+.fc-daygrid-day-top a:hover,
+.fc-col-header-cell-cushion a:hover {
+    color: #f91000 !important;
+    text-decoration: none !important; 
+}
+
+/* Style jour actuel */
+.fc-day-today {
+  /*background-color: #ffece4 !important; */
+  border: 2px solid #fbc02d; 
+  color: #727272; 
+}
+
+#description{
+  width: 100%; 
+  height: 100px; 
+  border: 1px solid #ced4da; 
+  padding: 10px; 
+  border-radius: 4px; 
+  background-color: #f8f9fa;
+  white-space: pre-wrap; 
+  overflow-y: auto;
+}
+
+.modal-footer-icons {
+  cursor: pointer;
+  font-size: 20px; 
+  color: #757575; 
+  padding: 5px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.modal-footer-icons:hover {
+  color: #f91000; 
+}
+
+.fc-event-main-frame{
+  font-size:1.5em;
+}
+
+.error-message{
+  color: red;
+}

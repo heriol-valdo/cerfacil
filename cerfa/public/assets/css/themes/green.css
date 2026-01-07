@@ -1,0 +1,78 @@
+.page-content {
+    background: #E9E9E9;
+   
+}
+
+.topmenu-outer {
+    background:  #153C4A;
+   
+}
+
+
+.main-content {
+    margin-left: 200px; /* Assurez-vous d'ajuster cette valeur en fonction de la largeur de la barre latérale */
+}
+
+ .logo-box {
+    background:#F93100;
+}
+
+.navbar .logo-box a {
+    color: #153C4A;
+}
+
+.sidebar {
+    background: #E9E9E9;
+   
+}
+
+.sidebar-header {
+    background: #fff;
+}
+
+.sidebar-profile span small {
+    color: #899dc1;
+}
+
+.menu {
+    background:#E9E9E9;
+}
+
+.menu.accordion-menu a {
+    color: #153C4A;
+}
+
+.menu.accordion-menu > li > a:hover {
+    background: #F93100;
+    color: #fff;
+}
+
+.menu.accordion-menu > li.active > a,
+.menu.accordion-menu > li.active.open > a {
+    background: #F93100;;
+    color: #fff;
+}
+
+.small-sidebar:not(.page-sidebar-fixed) .accordion-menu li.droplink:hover > a,
+.horizontal-bar .accordion-menu > li.droplink:hover > a,
+.menu.accordion-menu ul,
+.menu.accordion-menu li.open > a,
+.hover-menu .accordion-menu > li.droplink:hover > a {
+    background: #F93100;
+    color: #fff;
+}
+
+.menu.accordion-menu ul li a:hover,
+.menu.accordion-menu ul li.active a {
+    background: #F93100;
+    color:  #fff;
+}
+
+.menu.accordion-menu ul li a {
+    color: #899dc1;
+}
+
+.sub-menu.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
